@@ -25,3 +25,6 @@ Play all videos in YouTube playlist:
 
 Play all videos in YouTube playlist, skipping each to a specific time:
 ```play https://www.youtube.com/playlist?list=PL7B7FA4E693D8E790 00:25:36```
+
+#### Options
+Takes up to three (positional) arguments: ```play <media filename> <skip to time> <omxplayer options>```
