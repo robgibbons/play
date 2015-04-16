@@ -18,15 +18,15 @@ yt_file () {
 
 # Play all videos in YouTube playlist
 yt_plist () { 
-    for url in $(youParse "$1"); do play $(yt_file $url) $2; done 
+    for url in $(youParse "$1"); do play $(yt_file $url) $2 $3; done 
 }
 
 main () {
     if [ $# -ne 0 ]; then
-        [[ $1 == *"youtu"* ]] && ( [[ $1 == *"list="* ]] && yt_plist $1 $2 || play $(yt_file $1) $2) || play $1 $2 
+        [[ $1 == *"youtu"* ]] && ( [[ $1 == *"list="* ]] && yt_plist $1 $2 $3 || play $(yt_file $1) $2 $3) || play $1 $2 $3 
     fi
 }
 
-main $1 $2
+main $1 $2 $3
 
 exit 0
