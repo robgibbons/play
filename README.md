@@ -1,10 +1,13 @@
 # play
 A simple command-line media player for the Raspberry Pi.
 
-#### Requires: 
+#### Requires
 Play requires the following packages: ```omxplayer```, ```fbset```, ```youtube-dl```, and ```youParse```.
 
-#### Usage: 
+#### Installation
+After installing all requirements and downloading Play, move ```play.sh``` to ```/usr/local/bin``` or your preferred directory, and give it executable permissions. Optionally, you can change its name to just ```play```. Now you can call play directly from anywhere.
+
+#### Usage
 Play a local file:
 ```play somevideo.mp4```
 
