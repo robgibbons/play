@@ -28,3 +28,7 @@ Play all videos in YouTube playlist, skipping each to a specific time:
 
 #### Options
 Takes up to three (positional) arguments: ```play <filepath> <starttime> <omxplayer options>```
+
+#### Special Note
+To ensure consistent YouTube playback, be sure to update ```youtube-dl``` routinely:
+```sudo youtube-dl -U```
